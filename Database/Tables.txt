@@ -1,0 +1,29 @@
+delimiter $$
+
+CREATE DATABASE `shashank` /*!40100 DEFAULT CHARACTER SET utf8 */$$
+
+
+delimiter $$
+
+CREATE TABLE `login` (
+  `username` varchar(20) NOT NULL,
+  `password` varchar(15) DEFAULT NULL,
+  PRIMARY KEY (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8$$
+
+
+delimiter $$
+
+CREATE TABLE `ques1` (
+  `qid` int(11) NOT NULL,
+  `quesname` longtext,
+  `opta` varchar(45) DEFAULT NULL,
+  `optb` varchar(45) DEFAULT NULL,
+  `optc` varchar(45) DEFAULT NULL,
+  `optd` varchar(45) DEFAULT NULL,
+  `crrtans` varchar(45) DEFAULT NULL,
+  `userans` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`qid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8$$
+
+
